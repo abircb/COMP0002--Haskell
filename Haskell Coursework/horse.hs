@@ -60,8 +60,8 @@ seperate :: Horse -> String             -- Seperates every list in the horse(lis
 seperate [] = ""
 seperate (h:hs) = h ++  "\n" ++ seperate hs
 
--- To print: 1. horseSeq n triangularNumbers, where n >= 0
---           2. horseSeq n primeNumbers, where n >= 0
+-- To print: 1. horseSeq triangularNumbers n horse, where n >= 0
+--           2. horseSeq primeNumbers n horse, where n >= 0
 
 horseSeq :: (Int -> [Int]) -> Int -> Horse -> IO ()
 horseSeq f n h = if x == -1
